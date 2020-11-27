@@ -1,0 +1,797 @@
+* {
+  box-sizing: border-box; /*border: 1px solid red;*/
+}
+
+@font-face {
+  font-family: Agency FB;
+  src: url("http://allfont.net/download/agency-fb/");
+}
+
+body {
+  margin: 0;
+  background-color: white;
+  color: white;
+  font-family: "Agency FB";
+}
+
+nav.nav {
+  display: none;
+}
+
+div.mobilenav {
+  background-color: #323643;
+  height: 10vh;
+  position: relative;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+div.navdropdown {
+  display: none;
+  position: absolute;
+  padding-top: 2.7vh;
+  width: 200vw;
+  height: 28vh;
+}
+
+button.click:hover + div.navdropdown {
+  display: block;
+}
+div.navdropdown:hover {
+  display: block;
+}
+img.mobilenavcontent {
+  margin-top: 1vh;
+}
+p.mobilenavcontent {
+  margin-left: 5vw;
+}
+.btn {
+  background-color: #323643;
+  border: none;
+  color: white;
+  padding: 1vh 2vh;
+  font-size: 2vh;
+  cursor: pointer;
+  float: right;
+  margin-top: 3vh;
+}
+.mobilenavlink {
+  background-color: #323643;
+  text-decoration: none;
+  color: white;
+}
+.bg {
+  padding: 1vh;
+  background-color: #323643;
+}
+
+.parallaxbg {
+  height: 70vh;
+  margin-top: -3vh;
+  background-image: url(../images/slider/slider.jpg);
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+div.info {
+  height: auto;
+  background-image: url("../images/tech.jpg");
+  background-color: darkblue;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+div.slidertext {
+  padding-top: 20%;
+  text-align: center;
+}
+
+h1.slidertext {
+  font-size: 9vw;
+  font-weight: bolder;
+}
+
+p.slidertext {
+  font-size: 5vw;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 3vh;
+}
+
+.apps {
+  height: 95vh;
+  background-image: url("../images/apps.jpg");
+  background-color: darkblue;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.appsimg {
+  width: 45vw;
+  display: grid;
+  margin: auto;
+}
+
+.applink {
+  display: flex;
+  flex-direction: column;
+  margin-left: 35vw;
+}
+#appslink {
+  width: 100%;
+  margin-top: 5vh;
+  padding-left: 45vw;
+  font-size: 5vh;
+}
+.padding {
+  margin-top: 22vh;
+}
+
+h1.infotext {
+  margin-top: 1vh;
+  font-size: 10vw;
+  text-align: center;
+}
+p.infotext {
+  margin-top: 1vh;
+  font-size: 3vw;
+  text-align: center;
+  margin-bottom: 10vh;
+  font-weight: bold;
+}
+h1.readytext {
+  margin-top: 1vh;
+  font-size: 10vw;
+  text-align: center;
+}
+p.readytext {
+  margin-top: -2vh;
+  font-size: 6vw;
+  text-align: center;
+  margin-bottom: 10vh;
+}
+h1.apptext {
+  margin-top: 4vh;
+  font-size: 10vw;
+  font-weight: lighter;
+  text-align: center;
+}
+p.apptext {
+  margin-top: -2vh;
+  font-size: 4vh;
+  text-align: center;
+}
+.flip-box {
+  background-color: transparent;
+
+  height: 200px;
+
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100vw;
+  height: 30vw;
+  text-align: center;
+  transition: transform 0.2s;
+  transform-style: preserve-3d;
+}
+.sale {
+  height: 120vh;
+  background-color: white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h1.saletext {
+  margin-top: 4vh;
+  font-size: 10vw;
+  width: 100vw;
+
+  text-align: center;
+  color: black;
+}
+.saleimg {
+  width: 45vw;
+  display: grid;
+  margin: auto;
+}
+.slideshow {
+  width: 30vw;
+  margin-left: 2vw;
+  margin-right: 1vw;
+}
+div.imagecontainer {
+  display: flex;
+  flex-direction: row;
+}
+.imagediv {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 30vw;
+  margin-left: 2vw;
+  margin-right: 1vw;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #2176ff;
+}
+
+.imagediv:hover .overlay {
+  opacity: 1;
+}
+
+.ready {
+  height: 80vh;
+  background-image: url("../images/contact.jpg");
+  background-color: lightblue;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.cpright {
+  height: 30vh;
+  background-color: #333333;
+}
+p.cptext {
+  margin: 0;
+  padding-top: 1vh;
+  text-align: center;
+}
+div.cpimg {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: auto;
+}
+img.cpimg {
+  padding-top: 1vh;
+  width: 20vw;
+}
+div.cpcontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.stuff {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  font-size: 1.3vw;
+}
+.overlaytext {
+  display: grid;
+  text-align: center;
+  margin-top: 4vh;
+  margin-bottom: 5.5vh;
+  font-size: 2vw;
+}
+div.stuffcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100vw;
+  height: 30vw;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: white;
+}
+
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flipboxcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 3vh;
+}
+.button {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 10px 48px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 3.5vw;
+  display: grid;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 24px;
+  transition: all 0.5s;
+  width: 55%;
+}
+.button:hover {
+  background-color: #2176ff;
+  color: white;
+  transition: all 0.5s;
+}
+.reduce {
+  width: 49vw;
+  display: flex;
+  flex-direction: row;
+}
+#reduce {
+  margin-left: 5vw;
+  margin-right: 2vw;
+}
+#reduce2 {
+  margin-left: 3.3vw;
+  margin-right: 1vw;
+}
+#reduce3 {
+  margin-left: 10vw;
+}
+@media only screen and (min-width: 768px) {
+  nav.mobilenav {
+    display: none;
+  }
+  .navdropdown {
+    display: none;
+  }
+
+  .navhide {
+    display: none;
+  }
+
+  div.navwhite {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    background-color: white;
+    width: 100%;
+    padding-left: 28vw;
+    transition: all 1s;
+  }
+  .navcontent {
+    margin-right: 6vw;
+    text-transform: uppercase;
+  }
+  .navcontent2 {
+    display: none;
+    margin-right: 6vw;
+    text-transform: uppercase;
+    color: black;
+  }
+  div.navwhite a.navlink {
+    text-decoration: none;
+    align-self: center;
+  }
+  div.navwhite p {
+    color: black;
+  }
+  div.navwhite p:hover {
+    color: #2176ff;
+  }
+  nav.nav {
+    position: fixed;
+    margin: 0;
+    display: block;
+    z-index: 9999;
+  }
+  nav.nav a.navlink {
+    text-decoration: none;
+    color: white;
+    align-self: center;
+  }
+  div.navdiv {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    padding-left: 28vw;
+    transition: all 0.5s;
+    width: 100%;
+  }
+  .navcontent {
+    margin-right: 6vw;
+    text-transform: uppercase;
+    transition: all 0.5s;
+  }
+  p.navcontent {
+    font-size: 1.3vw;
+  }
+  .navbtn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 4.8vh 2vh;
+    font-size: 5vh;
+    cursor: pointer;
+    float: right;
+    transition: 0.5s;
+  }
+  div.navwhite .navbtn {
+    background-color: transparent;
+    border: none;
+    color: black;
+    padding: 4.8vh 2vh;
+    font-size: 5vh;
+    cursor: pointer;
+    float: right;
+    transition: 0.5s;
+  }
+  img.navcontent {
+    margin-top: 2.5vh;
+  }
+
+  .parallaxbg {
+    width: 100%;
+    height: 110vh;
+
+    background-image: url(../images/slider/slider.jpg);
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  div.slidertext {
+    padding-top: 5%;
+    text-align: center;
+  }
+  .button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 10px 48px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.4vw;
+    display: grid;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 24px;
+    transition: all 0.5s;
+    width: 45%;
+    height: 7vh;
+  }
+  .button:hover {
+    background-color: #2176ff;
+    color: white;
+    transition: all 0.5s;
+  }
+  .reduce {
+    width: 25vw;
+  }
+  #reduce {
+    margin-left: 3vw;
+  }
+  #appslink {
+    width: 100%;
+    margin-top: 10vh;
+    padding-left: 47vw;
+    font-size: 10vh;
+  }
+
+  i.link {
+    margin-left: 1.5vw;
+    margin-right: 0.8vw;
+  }
+  .contactlink {
+    margin-left: 2.2vw;
+    margin-right: 0.8vw;
+  }
+
+  h1.slidertext {
+    display: grid;
+    margin: auto;
+    margin-top: 15vh;
+    font-size: 10vw;
+    width: 70vw;
+  }
+
+  p.slidertext {
+    font-size: 3vw;
+    margin-top: -3vh;
+    margin-bottom: 7vh;
+  }
+  div.applinks {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25vw;
+    width: 50%;
+  }
+  .info {
+    width: 100%;
+    height: 180vh;
+    margin-top: 0.1vh;
+    background-image: url("../images/tech.jpg");
+    background-color: navy;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: 2px solid white;
+  }
+
+  .infoimg {
+    width: auto;
+    height: 15vw;
+    display: grid;
+    margin: auto;
+  }
+  h1.saletext {
+    padding-top: 4vh;
+    font-size: 4vw;
+    width: 60vw;
+    display: grid;
+    margin: auto;
+    text-align: center;
+    color: black;
+  }
+  h1.apptext {
+    margin-top: 4vh;
+    font-size: 4vw;
+    width: 60vw;
+    margin-left: 20vw;
+
+    text-align: center;
+  }
+
+  h1.infotext {
+    margin-top: 4vh;
+    font-size: 6vw;
+    width: 60vw;
+    margin-left: 20vw;
+  }
+  p.infotext {
+    margin-top: -8vh;
+    width: 70vw;
+    margin-left: 14.2vw;
+
+    font-size: 4vh;
+    margin-bottom: 10vh;
+  }
+  p.apptext {
+    width: 50vw;
+    margin-left: 26vw;
+
+    font-size: 4vh;
+    text-align: center;
+  }
+  div.infotext {
+    margin-top: -2vh;
+  }
+
+  .flip-box {
+    background-color: transparent;
+  }
+
+  .flip-box-inner {
+    position: relative;
+    width: 26vw;
+    height: 37vh;
+    text-align: center;
+    transition: transform 0.2s;
+    transform-style: preserve-3d;
+    margin: -1vw;
+  }
+
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-box-front,
+  .flip-box-back {
+    position: absolute;
+    width: 26vw;
+    height: 37vh;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    color: white;
+  }
+
+  .flip-box-front {
+    z-index: -1;
+  }
+
+  .flip-box-back {
+    transform: rotateY(180deg);
+  }
+
+  .flipboxcontainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border-color: blue;
+    align-content: center;
+    grid-gap: 40px;
+    padding: 2vw;
+    margin-bottom: 7vh;
+  }
+  h1.fliptext {
+    width: 80%;
+    font-size: 4.8vw;
+    margin-left: 2vw;
+    margin-top: -0.2vh;
+  }
+  p.fliptext {
+    margin-top: -5vh;
+  }
+  p.backfliptext {
+    margin-top: 10vh;
+  }
+  p.backfliptext a {
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+  }
+
+  .apps {
+    height: 130vh;
+    background-image: url("../images/apps.jpg");
+    background-color: darkblue;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+
+  .padding {
+    padding-top: 10vh;
+  }
+  .appsimg {
+    width: auto;
+    height: 15vw;
+    display: grid;
+    margin: auto;
+  }
+  .saleimg {
+    width: auto;
+    height: 15vw;
+    display: grid;
+    margin: 0 auto;
+    padding-top: 5vh;
+    transition: all 0.2s;
+  }
+  .saleimg:hover {
+    transform: scale(1.3);
+    transition: all 0.2s;
+  }
+  .applink {
+    display: flex;
+    flex-direction: column;
+    margin-left: 45vw;
+
+    width: 10vw;
+  }
+  .sale {
+    height: 140vh;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .slideshow {
+    width: 20vw;
+    margin-left: 6vw;
+    margin-right: 5vw;
+  }
+  div.imagecontainer {
+    display: flex;
+    flex-direction: row;
+  }
+  .imagediv {
+    position: relative;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 20vw;
+    margin-left: 6vw;
+    margin-right: 5vw;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #2176ff;
+  }
+
+  .imagediv:hover .overlay {
+    opacity: 1;
+  }
+  .overlaytext {
+    display: grid;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+  }
+  .stuff {
+    display: flex;
+    flex-direction: row;
+  }
+  div.stuffcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+
+  .ready {
+    height: 120vh;
+    background-image: url("../images/contact.jpg");
+    background-color: lightblue;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  h1.readytext {
+    margin-top: 4vh;
+    font-size: 6vw;
+    width: 60vw;
+    margin-left: 20vw;
+  }
+  p.readytext {
+    margin-top: -4vh;
+    width: 70vw;
+    margin-left: 14.2vw;
+
+    font-size: 4vh;
+    margin-bottom: 10vh;
+  }
+  .padding2 {
+    padding-top: 20vh;
+  }
+  .cpright {
+    height: 20vh;
+    background-color: #333333;
+  }
+  div.cpcontent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  p.cptext {
+    margin: 0;
+    padding-top: 7vh;
+    width: 40%;
+  }
+  img.cpimg {
+    padding-top: 3vh;
+    width: auto;
+    height: 10vh;
+  }
+  div.cpimg {
+    margin-left: 100vh;
+  }
+  #mobile {
+    margin-top: 10vh;
+  }
+  #reduce3 {
+    margin-left: 4vw;
+  }
+}

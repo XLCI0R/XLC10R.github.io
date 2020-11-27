@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box; /*border: 1px solid red;*/
+}
+
+@font-face {
+  font-family: Agency FB;
+  src: url("http://allfont.net/download/agency-fb/");
+}
+body {
+  margin: 0;
+  background-color: white;
+  color: white;
+  font-family: "Agency FB";
+}
+
+nav.nav {
+  display: none;
+}
+nav.mobilenav {
+  background-color: #323643;
+  height: 10vh;
+  position: relative;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+img.mobilenavcontent {
+  margin-top: 1vh;
+}
+.btn {
+  background-color: #323643;
+  border: none;
+  color: white;
+  padding: 1vh 2vh;
+  font-size: 2vh;
+  cursor: pointer;
+  float: right;
+  margin-top: 3vh;
+}
+div.navdropdown {
+  display: none;
+  position: absolute;
+  padding-top: 2.7vh;
+  width: 200vw;
+  height: 28vh;
+}
+
+button.click:hover + div.navdropdown {
+  display: block;
+}
+div.navdropdown:hover {
+  display: block;
+}
+.mobilenavlink {
+  background-color: #323643;
+  text-decoration: none;
+  color: white;
+}
+.bg {
+  padding: 1vh;
+  background-color: #323643;
+}
+p.mobilenavcontent {
+  margin-left: 5vw;
+}
+
+.cpright {
+  height: 20vh;
+  background-color: #333333;
+}
+p.cptext {
+  margin: 0;
+  padding-top: 1vh;
+  text-align: center;
+}
+div.cpimg {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: auto;
+}
+img.cpimg {
+  padding-top: 1vh;
+  width: 15vw;
+}
+div.cpcontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.shop {
+  height: 30vh;
+}
+.cart {
+  display: flex;
+  flex-direction: column;
+
+  border-bottom: 1px solid grey;
+  width: 80%;
+
+  margin-left: 10vw;
+}
+.stuff {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+@media only screen and (min-width: 768px) {
+  nav.mobilenav {
+    display: none;
+  }
+
+  .navhide {
+    display: none;
+  }
+  .navcontent {
+    margin-right: 6vw;
+    text-transform: uppercase;
+  }
+  .navcontent2 {
+    display: none;
+    margin-right: 6vw;
+    text-transform: uppercase;
+    color: black;
+  }
+  nav.nav {
+    margin: 0;
+    display: block;
+    z-index: 9999;
+  }
+  nav.nav a.navlink {
+    text-decoration: none;
+    color: white;
+    align-self: center;
+  }
+  div.navdiv {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    padding-left: 28vw;
+    transition: all 1s;
+    width: 100%;
+    background-color: #323643;
+  }
+  .navcontent {
+    margin-right: 6vw;
+    text-transform: uppercase;
+    transition: all 3s;
+  }
+  p.navcontent {
+    font-size: 1.3vw;
+  }
+  .navbtn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 4.8vh 2vh;
+    font-size: 5vh;
+    cursor: pointer;
+    float: right;
+    transition: 0.5s;
+  }
+  div.navwhite .navbtn {
+    background-color: transparent;
+    border: none;
+    color: black;
+    padding: 4.8vh 2vh;
+    font-size: 5vh;
+    cursor: pointer;
+    float: right;
+    transition: 0.5s;
+  }
+
+  .cpright {
+    height: 20vh;
+    background-color: #333333;
+  }
+  div.cpcontent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  p.cptext {
+    margin: 0;
+    padding-top: 7vh;
+    width: 40%;
+  }
+  img.cpimg {
+    padding-top: 3vh;
+    width: auto;
+    height: 10vh;
+  }
+  div.cpimg {
+    margin-left: 100vh;
+  }
+
+  .shop {
+    height: 50vh;
+  }
+  .cart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    width: 50%;
+
+    margin-left: 25vw;
+  }
+  .stuff {
+    display: flex;
+    flex-direction: row;
+  }
+}

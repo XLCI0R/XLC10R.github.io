@@ -1,0 +1,484 @@
+* {
+  box-sizing: border-box; /*border: 1px solid red;*/
+}
+
+@font-face {
+  font-family: Agency FB;
+  src: url("http://allfont.net/download/agency-fb/");
+}
+
+body {
+  margin: 0;
+  background-color: white;
+  color: white;
+  font-family: "Agency FB";
+}
+
+nav.nav {
+  display: none;
+}
+div.mobilenav {
+  background-color: #323643;
+  height: 10vh;
+  position: relative;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+div.navdropdown {
+  display: none;
+  position: absolute;
+  padding-top: 2.7vh;
+  width: 200vw;
+  height: 28vh;
+}
+
+button.click:hover + div.navdropdown {
+  display: block;
+}
+div.navdropdown:hover {
+  display: block;
+}
+img.mobilenavcontent {
+  margin-top: 1vh;
+}
+p.mobilenavcontent {
+  margin-left: 5vw;
+}
+.btn {
+  background-color: #323643;
+  border: none;
+  color: white;
+  padding: 1vh 2vh;
+  font-size: 2vh;
+  cursor: pointer;
+  float: right;
+  margin-top: 3vh;
+}
+.mobilenavlink {
+  background-color: #323643;
+  text-decoration: none;
+  color: white;
+}
+.bg {
+  padding: 1vh;
+  background-color: #323643;
+}
+.selection {
+  display: flex;
+  flex-direction: column;
+  margin-left: 33vw;
+}
+.dropbtn {
+  background-color: white;
+  color: black;
+
+  font-size: 2vw;
+  border: 1px solid grey;
+}
+.arrow {
+  border-left: 1px solid black;
+  padding: 1vw;
+  margin-right: -0.5vw;
+}
+
+.dropdown {
+  display: inline-block;
+  margin-top: 0.1vh;
+  margin-bottom: 1vh;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 26.2vw;
+
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 3px 5px;
+  text-decoration: none;
+  display: block;
+  border: 1px solid grey;
+}
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 23.7vw;
+
+  z-index: 1;
+}
+.dropdown-content2 a {
+  color: black;
+  padding: 3px 5px;
+  text-decoration: none;
+  display: block;
+  border: 1px solid grey;
+}
+.droptext {
+  font-size: 2vw;
+}
+.gallery {
+  margin-top: 5vh;
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+
+img.galleryimage {
+  width: 40vw;
+}
+.overlaytext {
+  display: grid;
+  text-align: left;
+
+  margin-bottom: 5vh;
+  color: #2176ff;
+}
+.stuff {
+  display: flex;
+  flex-direction: row;
+  color: #2176ff;
+  width: 100%;
+}
+div.stuffcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -5vh;
+}
+div.galleryimage {
+  width: 40vw;
+  cursor: pointer;
+}
+div.container {
+  margin-left: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cpright {
+  height: 20vh;
+  background-color: black;
+}
+p.cptext {
+  margin: 0;
+  padding-top: 1vh;
+  text-align: center;
+}
+div.cpimg {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: auto;
+}
+img.cpimg {
+  padding-top: 1vh;
+  width: 15vw;
+}
+div.cpcontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+div.next {
+  color: black;
+  display: flex;
+  flex-direction: row;
+}
+.icons {
+  margin-left: 6vw;
+}
+div.next {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  float: right;
+}
+a.next2 {
+  margin-top: 4vh;
+  text-decoration: none;
+  color: grey;
+}
+p.next {
+  padding: 1vw;
+  border: 1px solid grey;
+  margin-right: 1vw;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropdown-content2 {
+  display: block;
+}
+h3.salebutton {
+  position: absolute;
+
+  color: white;
+  border-radius: 60px;
+  padding: 12px;
+  background-color: blue;
+}
+@media only screen and (min-width: 768px) {
+  nav.mobilenav {
+    display: none;
+  }
+  .navdropdown {
+    display: none;
+  }
+
+  .navhide {
+    display: none;
+  }
+  div.navwhite {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    background-color: white;
+    width: 100%;
+    padding-left: 28vw;
+    transition: all 1s;
+  }
+  .navcontent {
+    margin-right: 6vw;
+    text-transform: uppercase;
+  }
+  .navcontent2 {
+    display: none;
+    margin-right: 6vw;
+    text-transform: uppercase;
+    color: black;
+  }
+  div.navwhite a.navlink {
+    text-decoration: none;
+    align-self: center;
+  }
+  div.navwhite p {
+    color: black;
+  }
+  div.navwhite p:hover {
+    color: #2176ff;
+  }
+  nav.nav {
+    position: sticky;
+    margin: 0;
+    display: block;
+    z-index: 9999;
+  }
+  nav.nav a.navlink {
+    text-decoration: none;
+    color: white;
+    align-self: center;
+  }
+  div.navdiv {
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    padding-left: 28vw;
+    transition: all 0.5s;
+    width: 100%;
+    background-color: #323643;
+  }
+  .navcontent {
+    margin-right: 6vw;
+    text-transform: uppercase;
+    transition: all 0.5s;
+  }
+  p.navcontent {
+    font-size: 1.3vw;
+  }
+  .navbtn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 4.8vh 2vh;
+    font-size: 5vh;
+    cursor: pointer;
+    float: right;
+    transition: 0.5s;
+  }
+  div.navwhite .navbtn {
+    background-color: transparent;
+    border: none;
+    color: black;
+    padding: 4.8vh 2vh;
+    font-size: 5vh;
+    cursor: pointer;
+    float: right;
+    transition: 0.5s;
+  }
+  img.navcontent {
+    margin-top: 2.5vh;
+  }
+
+  .selection {
+    display: flex;
+    flex-direction: row;
+
+    margin-left: 2vw;
+  }
+  .dropbtn {
+    background-color: white;
+    color: black;
+
+    font-size: 16px;
+    border: 1px solid grey;
+    font-size: 1vw;
+  }
+  .arrow {
+    border-left: 1px solid black;
+    padding: 1vw;
+    margin-right: -0.5vw;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+
+    margin-left: 5vw;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 14.6vw;
+
+    z-index: 1;
+  }
+  .dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 13.2vw;
+
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 3px 5px;
+    text-decoration: none;
+    display: block;
+    border: 1px solid grey;
+  }
+  .dropdown-content2 a {
+    color: black;
+    padding: 3px 5px;
+    text-decoration: none;
+    display: block;
+    border: 1px solid grey;
+  }
+  .droptext {
+    font-size: 1vw;
+  }
+
+  .selectiondropdown {
+    margin-left: 0vw;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown:hover .dropdown-content2 {
+    display: block;
+  }
+
+  .gallery {
+    margin-top: 5vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
+
+  img.galleryimage {
+    width: 20vw;
+  }
+  .overlaytext {
+    display: grid;
+    text-align: left;
+
+    margin-bottom: 5vh;
+    color: #2176ff;
+  }
+  .stuff {
+    display: flex;
+    flex-direction: row;
+    color: #2176ff;
+    width: 100%;
+  }
+  div.stuffcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -5vh;
+  }
+  div.galleryimage {
+    width: 20vw;
+    cursor: pointer;
+  }
+  div.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0vw;
+  }
+  .padding2 {
+    padding-top: 20vh;
+  }
+  .cpright {
+    height: 20vh;
+    background-color: #333333;
+  }
+  div.cpcontent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  p.cptext {
+    margin: 0;
+    padding-top: 7vh;
+    width: 40%;
+  }
+  img.cpimg {
+    padding-top: 3vh;
+    width: auto;
+    height: 10vh;
+  }
+  div.cpimg {
+    margin-left: 100vh;
+  }
+  div.next {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    float: right;
+  }
+  a.next2 {
+    margin-top: 4.5vh;
+    text-decoration: none;
+    color: grey;
+  }
+  .two {
+    width: auto;
+  }
+  .icons {
+    margin-left: -0.2vw;
+  }
+  p.next {
+    padding: 1vw;
+    border: 1px solid grey;
+    margin-right: 1vw;
+    cursor: pointer;
+  }
+  h3.salebutton {
+    position: absolute;
+
+    color: white;
+    border-radius: 60px;
+    padding: 12px;
+
+    background-color: blue;
+  }
+}

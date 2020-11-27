@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" href="../images/nt-black.png" type="image/x-icon">
+	<title>WORK - Nightowl Technology</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/projects.css">
+</head>
+<body>
+	<nav class="nav">
+		<div class="navdiv" id="navtrans">
+			<a href="../index.html" class="navlink"><p class="navcontent">Home</p></a>
+			<a href="projects.html" class="navlink"><p style="color: #2176ff;" class="navcontent">Projects</p></a>
+			<a href="../index.html"><img src="../images/nt_white.png" id="navcontent" class="navcontent"></a>
+			<a href="../index.html"><img src="../images/nt-black.png" id="navcontent2" class="navhide"></a>
+			<a href="shop.html"class="navlink"><p class="navcontent">Shop</p></a>
+			<a href="contact.html"class="navlink"><p class="navcontent">Contact Us</p></a>
+			<a href="cart.html"><button class="navbtn"><i class="fa fa-shopping-cart"></i></button></a>
+		</div>
+	</nav>
+
+	<nav class="mobilenav">
+		<div class="mobilenav">
+			<img src="../images/NIGHTOWLAVADALOGO-1.png" class="mobilenavcontent">
+			<a href="cart.html" ><button class="btn" ><i class="fa fa-shopping-cart"></i></button></a>
+			<button class="btn click"><i class="fa fa-bars"></i></button>
+			
+			
+			<div class="navdropdown" style="margin: -2vh;">
+				<div class="bg"><a href="../index.html" class="mobilenavlink"><p class="mobilenavcontent">Home</p></a></div>
+				<div class="bg"><a href="projects.html" class="mobilenavlink"><p class="mobilenavcontent">Projects</p></a></div>
+				<div class="bg"><a href="shop.html" class="mobilenavlink"><p class="mobilenavcontent">Shop</p></a></div>
+				<div class="bg"><a href="contact.html"class="mobilenavlink"><p class="mobilenavcontent">Contact Us</p></a></div>
+			</div>
+		</div>
+		
+	</nav>
+	
+
+	<div class="work">
+		<div class="slidertext">
+			<h1 class="slidertext">We Work 24/7</h1>		
+				<p class="slidertext">Do <b>NIGHTOWLS</b> sleep?</p>
+
+				<div class="link">
+					<a class="button reduce" style="display: flex; flex-direction: row;" href="shop.html"><i class="fa fa-play link" id="reduce"></i>VIEW OUR SHOP</a>
+				</div>
+		</div>
+	</div>
+
+	<div class="gallery">
+		<div class="gallerycontent">
+			<h1 class="gallerytext">Our Work</h1>
+			<p class="gallerytext">We Don't compromise quality of our products and services</p>
+			<img src="../images/divide.png" class="gallerythumb">
+
+			<div class="galleryimages">
+				<div class="imagediv">
+					<img src="../images/nileconnect.jpg" class="galleryimage">
+					<div class="overlay">
+						<i class="fa fa-link overlaycontent"></i>
+					</div>
+				</div>
+
+				<div class="imagediv">
+					<img src="../images/lead.jpg" class="galleryimage">
+					<div class="overlay">
+						<i class="fa fa-link overlaycontent"></i>
+					</div>
+				</div>
+
+				<div class="imagediv">
+					<img src="../images/nasara.jpg" class="galleryimage">
+					<div class="overlay">
+						<i class="fa fa-link overlaycontent"></i>
+					</div>
+				</div>
+			</div>
+			
+				
+				
+			<div class="galleryimages">
+				<div class="imagediv">
+					<img src="../images/a2k.jpg" class="galleryimage">
+					<div class="overlay">
+						<i class="fa fa-link overlaycontent"></i>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="ready">
+			<div class="padding2">
+				<img class="appsimg" src="../images/favion-300x207.png">
+				<h1 class="readytext">Are You Ready</h1>
+				<p class="readytext">CONTACT US AND LET’S TALK BUSINESS</p>	
+				<div class="link">
+					<a class="button reduce" style="display: flex; flex-direction: row;" href="contact.html"><i class="fa fa-play link" id="reduce"></i>Contact Us</a>
+				</div>
+			</div>			
+		</div>
+
+		<div class="cpright">
+			<div class="cpcontent">
+				<p class="cptext"> © Copyright - 2020    |  Contact 08034135061  |   Powered by Nightowl Technology</p>
+				<div class="cpimg">
+					<img class="cpimg" src="../images/tw_logo.png">
+					<img class="cpimg" src="../images/fb_logo.png">
+				</div>
+			</div>
+		</div>
+
+
+	<script>
+	window.onscroll = function() {myFunction()};
+
+	function myFunction() {
+	  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 50) {
+	    document.getElementById("navtrans").className = "navwhite";
+	    document.getElementById("navcontent").className = "navhide";
+	    document.getElementById("navcontent2").className = "navcontent";
+	  } else {
+	    document.getElementById("navtrans").className = "navdiv";
+	    document.getElementById("navcontent2").className = "navhide";
+	    document.getElementById("navcontent").className = "navcontent";
+	  }
+	  
+	}
+	</script>
+</body>
+</html>
