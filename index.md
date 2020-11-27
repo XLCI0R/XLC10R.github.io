@@ -23,14 +23,11 @@ Level - 300 -->
 		</div>
 		</div>
 	</nav>
-
 	<nav class="mobilenav">
 		<div class="mobilenav">
 			<img src="images/NIGHTOWLAVADALOGO-1.png" class="mobilenavcontent">
 			<a href="pages/cart.html" ><button class="btn" ><i class="fa fa-shopping-cart"></i></button></a>
 			<button class="btn click"><i class="fa fa-bars"></i></button>
-			
-			
 			<div class="navdropdown" style="margin: -2vh;">
 				<div class="bg"><a href="index.html" class="mobilenavlink"><p class="mobilenavcontent">Home</p></a></div>
 				<div class="bg"><a href="pages/projects.html" class="mobilenavlink"><p class="mobilenavcontent">Projects</p></a></div>
@@ -38,30 +35,22 @@ Level - 300 -->
 				<div class="bg"><a href="pages/contact.html"class="mobilenavlink"><p class="mobilenavcontent">Contact Us</p></a></div>
 			</div>
 		</div>
-		
 	</nav>
-	
-	<!--- Nav Bar --->
-
 	<div class="parallaxbg">
 		<div class="slidertext">
 			<h1 class="slidertext fixed">Lets TECH it!</h1>		
 			<p class="slidertext fixed">IF LIFE IS BECOMING SMARTER, WHY WON'T YOU ?</p>
-
 			<div class="link">
 				<a class="button reduce" style="display: flex; flex-direction: row;" href="pages/projects.html"><i class="fa fa-play link" id="reduce"></i>VIEW OUR WORK</a>
 			</div>
 		</div>
 	</div>
-
 	<div class="info">
 		<img class="appsimg" src="images/favion-300x207.png">
 		<div class="infotext">
 			<h1 class="infotext">WHAT WE DO</h1>
 			<p class="infotext">NIGHTOWL TECHNOLOGY PROVIDES IT/SOLUTION RELATED TO SOFTWARE AND HARDWARE ACROSS NIGERIA</p>	
 		</div>
-		
-
 		<div class="flipboxcontainer">
 			 <div class="flip-box">
 			  <div class="flip-box-inner">
@@ -69,41 +58,34 @@ Level - 300 -->
 			      <h1 class="fliptext">Security Gadgets</h1>
 			      <p class="fliptext">We Supply & Install Security Gadgets</p>
 			    </div>
-
 			    <div class="flip-box-back" style="background-color:#3fc7b0; ">
 			      <p class="backfliptext">We supply & install CCTV surveillance camera to ensure good monitoring of your home and business place</p>
 			    </div>
 			  </div>
 			</div>
-
 			 <div class="flip-box">
 			  <div class="flip-box-inner">
 			    <div class="flip-box-front" style="background-color:#f67a68; ">
 			      <h1 class="fliptext">Website Design</h1>
 			      <p class="fliptext">Build online presence with us</p>
-			    </div>
-			    
+			    </div>   
 			    <div class="flip-box-back" style="background-color:#f67a68; ">
 			      <p class="backfliptext">We develop 100% fully responsive website that is very easy to use and manage</p>
 			    </div>
 			  </div>
-			</div> 
-
+			</div>
 			 <div class="flip-box">
 			  <div class="flip-box-inner">
 			    <div class="flip-box-front" style="background-color:#339bc2; ">
 			    	<h1 class="fliptext" id="mobile">Mobile Apps</h1>
-			      <p class="fliptext" style="margin-top: -4vw;">We Build Apps for both IOS and Android</p>
-			     
-			    </div>
-			    
+				    <p class="fliptext" style="margin-top: -4vw;">We Build Apps for both IOS and Android</p>
+				  </div>
 			    <div class="flip-box-back" style="background-color:#339bc2; ">
 			     <p class="backfliptext">We design and develop mobile applications with excellent design and powerful user experience that is very easy to use</p>
 			    </div>
 			  </div>
 			</div> 
 		</div>
-
 		<div class="flipboxcontainer">
 			 <div class="flip-box">
 			  <div class="flip-box-inner">
@@ -111,41 +93,35 @@ Level - 300 -->
 			       <h1 class="fliptext">Student Portal</h1>
 			      <p class="fliptext">Make it easy for all</p>
 			    </div>
-
 			    <div class="flip-box-back" style="background-color:#c83f43; ">
 			      <p class="backfliptext">We design and develop school management system to ease grade computation. help parents to monitor their children performance and much more.</p>
 			    </div>
 			  </div>
 			</div>
-
 			 <div class="flip-box">
 			  <div class="flip-box-inner">
 			    <div class="flip-box-front" style="background-color:#a96eb7; ">
 			       <h1 class="fliptext">Tech Patnering
 			       </h1>
 			      <p class="fliptext">Lets work together</p>
-			    </div>
-			    
+				  </div>
 			    <div class="flip-box-back" style="background-color:#a96eb7; ">
 			      <p class="backfliptext">Do you have an innovative idea?  let’s work together and make your dreams come true. Nightowl Technology is equipped with experienced youth and professional team.</p>
 			    </div>
 			  </div>
 			</div> 
-
 			 <div class="flip-box">
 			  <div class="flip-box-inner">
 			    <div class="flip-box-front" style="background-color:#be8864; ">
 			       <h1 class="fliptext">Custom Branding</h1>
 			      <p class="fliptext">Buy our cusom brand accessories</p>
 			    </div>
-			    
 			    <div class="flip-box-back" style="background-color:#be8864; ">
 			      <p class="backfliptext">Feel free to visit our shop & buy custom branded Nightowl shirts, Caps, Stickers and MacBook cases. <a href="pages/shop.html">Go to store</a></p>
 			    </div>
 			  </div>
 			</div> 
 		</div>
-
 		<div class="apps">
 			<div class="padding">
 				<img class="appsimg" src="images/favion-300x207.png">
@@ -158,7 +134,6 @@ Level - 300 -->
 			</div>
 			<a href="#sale"><i class="fa fa-chevron-down" id="appslink" style="color: white;"></i></a>
 		</div>
-
 		<div class="sale" id="sale">
 			<img class="saleimg" src="images/nightowl_head_black.jpg">
 			<h1 class="saletext">FEATURED PRODUCTS</h1>
@@ -180,7 +155,6 @@ Level - 300 -->
 				                <p style="color: white;">Details</p>
 				            </div>
 						</div>
-
 					</div>
 				</div>
 				<div class="imagediv">
@@ -225,7 +199,6 @@ Level - 300 -->
 		<a class="button reduce" style="display: flex; flex-direction: row;color: white;background-color: #2176ff; margin-top: 10vh;" href="pages/shop.html"><i class="fa fa-play link" id="reduce"></i>VISIT OUR SHOP</a>
 		<a href="#ready"><i class="fa fa-chevron-down" id="appslink" style="color: black;"></i></a>
 	</div>
-
 		<div class="ready" id="ready">
 			<div class="padding2">
 				<img class="appsimg" src="images/favion-300x207.png">
@@ -236,7 +209,6 @@ Level - 300 -->
 				</div>
 			</div>			
 		</div>
-
 		<div class="cpright">
 			<div class="cpcontent">
 				<p class="cptext"> © Copyright - 2020    |  Contact 08034135061  |   Powered by Nightowl Technology</p>
@@ -247,10 +219,8 @@ Level - 300 -->
 			</div>
 		</div>
 	</div>
-
 	<script>
 	window.onscroll = function() {myFunction()};
-
 	function myFunction() {
 	  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 50) {
 	    document.getElementById("navtrans").className = "navwhite";
@@ -262,7 +232,6 @@ Level - 300 -->
 	    document.getElementById("navcontent").className = "navcontent";
 	  }
 	}
-	
 	</script>
 </body>
 </html>
